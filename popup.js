@@ -4,15 +4,33 @@ const randomEmoji = () => {
   return String.fromCodePoint(emojis[randomNum])
 }
 
-const comments = ["love this energy " + randomEmoji(), 
-"love this design! so creative " + randomEmoji(),
-"beautiful vision board "  + randomEmoji(),
-"So pretty " + randomEmoji(),
-"love this aesthetic! " + randomEmoji(),
+const coolSynonym = () => {
+  const adjectives = ["fun", "vibey", "cool"]
+  const randomNum = Math.floor(Math.random() * adjectives.length)
+  return adjectives[randomNum]
+}
+
+const beautifulSynonym = () => {
+  const adjectives = ["gorgeous", "beautiful"]
+  const randomNum = Math.floor(Math.random() * adjectives.length)
+  return adjectives[randomNum]
+}
+
+const randomBoardElement = () => {
+  const elements = ["vibe", "design", "aesthetic","idea", "layout", "energy", "style"]
+  const randomNum = Math.floor(Math.random() * elements.length)
+  return elements[randomNum]
+}
+
+const comments = ["love this " + randomBoardElement() + " " + randomEmoji(), 
+"love this " + randomBoardElement() + " " + randomEmoji(),
+"love this design! so creative " + randomEmoji(), 
+ beautifulSynonym() + " vision board "  + randomEmoji(), 
+"So pretty " + randomEmoji(), 
 "this is so cute!  " + randomEmoji() + " " + randomEmoji(),
-"oo love this! thanks for including links! " + randomEmoji(),
-"oo such a cool way to use a board! ",
-"love this! " + randomEmoji() + " the images are so cool! where did you find them?"
+"love this! these images are so " + coolSynonym() + " " + randomEmoji(),
+"love this! saving this for inspo! ",
+"these look so good! definitely going to check them out " + randomEmoji() 
 ]
 
 
