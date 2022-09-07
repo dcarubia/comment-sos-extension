@@ -17,20 +17,32 @@ const beautifulSynonym = () => {
 }
 
 const randomBoardElement = () => {
-  const elements = ["vibe", "design", "aesthetic","idea", "layout", "energy", "style"]
+  const elements = ["vibe", "design", "aesthetic","concept", "layout", "energy", "style"]
+  const randomNum = Math.floor(Math.random() * elements.length)
+  return elements[randomNum]
+}
+
+const crashLandingCompliment = () => {
+  const elements = ["love what you did with this!", "amazing first board!", "this is beautiful!" ]
+  const randomNum = Math.floor(Math.random() * elements.length)
+  return elements[randomNum]
+}
+
+const welcome = () => {
+  const elements = ["welcome!", "welcome to landing!", "so happy you're here!", "so excited to see what you create!" ]
   const randomNum = Math.floor(Math.random() * elements.length)
   return elements[randomNum]
 }
 
 const comments = ["love this " + randomBoardElement() + " " + randomEmoji(), 
-"love this " + randomBoardElement() + " " + randomEmoji(),
-"love this design! so creative " + randomEmoji(), 
+"love this " + randomBoardElement() + "! so creative! " + randomEmoji() ,
+"this is " + beautifulSynonym() + "! " + randomEmoji() + " " + randomEmoji(), 
  beautifulSynonym() + " vision board "  + randomEmoji(), 
 "So pretty " + randomEmoji(), 
 "this is so cute!  " + randomEmoji() + " " + randomEmoji(),
-"love this! these images are so " + coolSynonym() + " " + randomEmoji(),
-"love this! saving this for inspo! ",
-"these look so good! definitely going to check them out " + randomEmoji() 
+"love these summer vibes! " + randomEmoji(),
+crashLandingCompliment() + " " + welcome() + " " + randomEmoji(),
+crashLandingCompliment() + " " + welcome() + " " + randomEmoji(),
 ]
 
 
